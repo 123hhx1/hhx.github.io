@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>非遗作品展示 | 资中木偶戏</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- 2. 再引入你的自定义CSS（路径必须正确！） -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!-- 红色导航栏（固定顶部） -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar" >
+    <div class="container">
+        <a class="navbar-brand text-white" href="index.html">
+            <i class="fas fa-theater-masks"></i> 资中木偶 · 非遗传承
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="gallery.html">作品展示</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="story.html">传承人</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="craft.html">工艺科普</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- 主体内容 -->
+    <main class="pt-4 mt-4">
+        <!-- 作品展示模块：py-5=上下内边距，bg-light=浅灰背景 -->
+        <section id="gallery" class="py-5 bg-light">
+            <div class="container">
+                <!-- 模块标题 -->
+                <div class="section-title text-center mb-5">
+                    <h2 class="display-5 fw-bold chinese-tit">木偶作品展示</h2>
+                    <p class="text-muted">匠心雕刻 · 百态木偶</p>
+                </div>
+
+                <!-- 作品栅格：g-4=列间距 -->
+                <div class="row g-4">
+                    <!-- 作品1：传统戏曲木偶 -->
+                    <div class="col-md-6 col-lg-4">
+                        <!-- 作品卡片：h-100=高度100%，shadow-sm=小阴影，border-0=无边框，custom-card=自定义样式 -->
+                        <div class="card h-100 shadow-sm border-0 custom-card">
+                            <!-- 作品图片：card-img-top=卡片顶部图片，gallery-img=自定义类（用于JS点击放大），data-img-large=高清图地址 -->
+                            <img src="img/1.jpg" class="card-img-top gallery-img" data-img-large="img/1.webp" loading="lazy" alt="传统戏曲木偶">
+                            <div class="card-body text-center">
+                                <h5 class="card-title chinese-tit">传统戏曲木偶</h5>
+                                <p class="card-text">纯手工雕刻，脸谱彩绘，还原《霸王别姬》《空城计》等川剧经典角色造型。</p>
+                                <!-- 放大按钮：btn-danger=红色按钮，btn-sm=小按钮，view-img-btn=自定义类（用于JS），data-img=高清图地址 -->
+                                <button class="btn btn-danger btn-sm view-img-btn" data-img="img/7.webp">
+                                    <i class="fas fa-search-plus me-1"></i>点击放大
+                                    <!-- fa-search-plus=放大图标，me-1=右边距 -->
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 作品2：雕刻工艺木偶 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0 custom-card">
+                            <img src="img/2.webp" class="card-img-top gallery-img" data-img-large="img/2.webp" loading="lazy" alt="雕刻工艺木偶">
+                            <div class="card-body text-center">
+                                <h5 class="card-title chinese-tit">雕刻工艺木偶</h5>
+                                <p class="card-text">樟木精雕，关节灵活，眼嘴可动，神态逼真，代表作《关羽》《孙悟空》。</p>
+                                <button class="btn btn-danger btn-sm view-img-btn" data-img="img/8.webp">
+                                    <i class="fas fa-search-plus me-1"></i>点击放大
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 作品3：戏台表演木偶 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0 custom-card">
+                            <img src="img/3.webp" class="card-img-top gallery-img" data-img-large="img/3.webp" loading="lazy" alt="戏台表演木偶">
+                            <div class="card-body text-center">
+                                <h5 class="card-title chinese-tit">戏台表演木偶</h5>
+                                <p class="card-text">适合舞台演出，服饰精美，搭配川剧唱腔，是舞台表演的核心道具。</p>
+                                <button class="btn btn-danger btn-sm view-img-btn" data-img="img/9.webp">
+                                    <i class="fas fa-search-plus me-1"></i>点击放大
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 新增：作品4 文创木偶 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0 custom-card">
+                            <img src="img/4.webp" class="card-img-top gallery-img" data-img-large="img/4.webp" loading="lazy" alt="文创木偶">
+                            <div class="card-body text-center">
+                                <h5 class="card-title chinese-tit">文创迷你木偶</h5>
+                                <p class="card-text">非遗年轻化创新，迷你尺寸（15cm），保留传统工艺，适合收藏、送礼。</p>
+                                <button class="btn btn-danger btn-sm view-img-btn" data-img="img/文创木偶.webp">
+                                    <i class="fas fa-search-plus me-1"></i>点击放大
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 新增：作品5 民俗木偶 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0 custom-card">
+                            <img src="img/5.webp" class="card-img-top gallery-img" data-img-large="img/5.webp" loading="lazy" alt="民俗木偶">
+                            <div class="card-body text-center">
+                                <h5 class="card-title chinese-tit">民俗主题木偶</h5>
+                                <p class="card-text">结合川南民俗文化，雕刻采茶、婚嫁等场景木偶，展现地域特色。</p>
+                                <button class="btn btn-danger btn-sm view-img-btn" data-img="img/民俗木偶.webp">
+                                    <i class="fas fa-search-plus me-1"></i>点击放大
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 新增：作品6 历史人物木偶 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0 custom-card">
+                            <img src="img/6.webp" class="card-img-top gallery-img" data-img-large="img/6.webp" loading="lazy" alt="历史人物木偶">
+                            <div class="card-body text-center">
+                                <h5 class="card-title chinese-tit">历史人物木偶</h5>
+                                <p class="card-text">还原诸葛亮、李白等巴蜀历史名人形象，细节考究，文化底蕴深厚。</p>
+                                <button class="btn btn-danger btn-sm view-img-btn" data-img="img/历史木偶.webp">
+                                    <i class="fas fa-search-plus me-1"></i>点击放大
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer py-4 text-center text-white">
+        <div class="container">
+            <p>&copy; 2026 资中中型杖头木偶戏 · 国家级非遗</p>
+            <p class="small">匠心作品 · 非遗之美</p>
+        </div>
+    </footer>
+
+    <!-- 图片预览模态框（与首页一致） -->
+    <div class="modal fade" id="imageModal">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title">资中木偶高清展示</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="" id="modalPreviewImg" class="img-fluid rounded" style="max-height:70vh">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 引入JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- 4. 再引入你的自定义JS（路径必须正确！） -->
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+/* 导航栏 */
+#mainNavbar {
+    background-color: #dc3545;
+    transition: background-color 0.4s ease;
+}
+#mainNavbar.scrolled {
+    background-color: #b81c27;
+}
+
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+.nav-link:hover {
+    color: #ffd700 !important;
+}
+
+/* 卡片：悬浮上浮+图片放大（核心！） */
+.custom-card {
+    transition: transform 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.custom-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0.15);
+}
+.custom-card .card-img-top {
+    transition: transform 0.4s ease;
+}
+.custom-card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+/* 页脚 */
+.footer {
+    background-color: #dc3545;
+    color: white;
+}
